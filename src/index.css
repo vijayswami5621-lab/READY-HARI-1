@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-hindi: "Yatra One", "Inter", sans-serif;
+
+  --color-saffron-50: #fff8f1;
+  --color-saffron-100: #ffefdf;
+  --color-saffron-200: #ffdfc0;
+  --color-saffron-300: #ffc79a;
+  --color-saffron-400: #ffa364;
+  --color-saffron-500: #ff8333;
+  --color-saffron-600: #f06112;
+  --color-saffron-700: #c84910;
+  --color-saffron-800: #9e3914;
+  --color-saffron-900: #7f3214;
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/40 backdrop-blur-xl border border-white p-1 shadow-2xl;
+  }
+  .glass-nav {
+    @apply bg-white/80 backdrop-blur-md border-b border-orange-100 shadow-none;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-amber-500;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#FCFAF7] text-[#3d2b1f] font-sans antialiased overflow-x-hidden selection:bg-orange-100;
+}

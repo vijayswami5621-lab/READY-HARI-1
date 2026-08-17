@@ -1,0 +1,6 @@
+{
+  "name": "Hari Pathshala",
+  "description": "A modern spiritual gurukul dedicated to Bhagavad Gita, Ramcharitmanas, Sanskrit, and Sanatana Dharma.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
